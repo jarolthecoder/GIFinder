@@ -1,7 +1,8 @@
 # GIFinder App
 
-Gif finder project built with Angular and using the <a href="https://giphy.com/">GIPHY</a> API <br>
-Live web application link: `https://glistening-kataifi-d84de8.netlify.app/`
+Gif finder project built with Angular and using <a href="https://giphy.com/">GIPHY</a>'s API <br>
+Live web application link: <a href="https://glistening-kataifi-d84de8.netlify.app/">Click Here</a> <br><br>
+This project will be in continuous update and more features will be added. 
 
 ## Development server
 
