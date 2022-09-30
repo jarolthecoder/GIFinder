@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SharedService } from './shared/services/shared.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gifs-app';
+  searchValue:string = '';
+
+  constructor(public shared: SharedService) {}
+
+  getValue($event:string) {
+    this.searchValue = $event
+  }
 }
