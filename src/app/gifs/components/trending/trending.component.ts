@@ -1,8 +1,10 @@
 import { Component, EventEmitter, OnInit, Output} from '@angular/core';
-import { faLineChart, faChevronLeft, faChevronRight, faLink } from '@fortawesome/free-solid-svg-icons';
+
 import { TrendingService } from '../../services/trending.service';
 import { GifService } from '../../services/gifs.service';
 import { SharedService } from 'src/app/shared/services/shared.service';
+
+import { faLineChart, faChevronLeft, faChevronRight, faLink } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-trending',
@@ -15,7 +17,7 @@ export class TrendingComponent implements OnInit {
   faLeft = faChevronLeft;
   faRight = faChevronRight
 
-  @Output() sendValue: EventEmitter<string> = new EventEmitter()
+  @Output() sendValue: EventEmitter<string> = new EventEmitter();
   searchValue: string = ''
 
   get trendingGifs() { return this.trending.trending } 

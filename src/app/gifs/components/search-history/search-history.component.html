@@ -10,9 +10,7 @@
             {{ item | titlecase }}
             <fa-icon [icon]="faClose" (click)="removeItem(item)"></fa-icon>
         </span>
-        <p *ngIf="search.length < 1" class="empty-msg">
-            Search history is empty
-        </p>
+        <p *ngIf="search.length < 1" class="empty-msg">Search history is empty</p>
     </div>
     <!-- Clear history button -->
     <div (click)="clearSearch()" class="clear-btn">

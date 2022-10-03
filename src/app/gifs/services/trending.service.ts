@@ -22,11 +22,11 @@ export class TrendingService {
     const params = new HttpParams()
       .set('api_key', this.apiKey);
     
-      this.http.get<SearchGifsResponse>(`${this.serviceURL}/gifs/trending`, {params})
-        .subscribe((resp) => {
-          this.trending = resp.data
-          this.shared.loading = false
-        })
+    this.http.get<SearchGifsResponse>(`${this.serviceURL}/gifs/trending`, {params})
+      .subscribe((resp) => {
+        this.trending = resp.data
+        this.shared.loading = false
+      });
   }
 
   getTrendingList() {
@@ -36,7 +36,6 @@ export class TrendingService {
     this.http.get<TrendingListResponse>(`${this.serviceURL}/trending/searches`, {params})
       .subscribe((resp) => {
         this.trendingList = resp.data.splice(0, 6)
-    }) 
-    
+    });
   }
 }

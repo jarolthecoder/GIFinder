@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { SharedService } from 'src/app/shared/services/shared.service';
-import { GifService } from '../../gifs/services/gifs.service';
-import { TrendingService } from '../../gifs/services/trending.service';
 
 @Component({
   selector: 'app-loading',

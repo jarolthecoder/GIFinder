@@ -11,9 +11,9 @@ import { faXmark, faTrash } from '@fortawesome/free-solid-svg-icons';
 })
 export class SearchHistoryComponent {
   faClose = faXmark
-  faTrash= faTrash
+  faTrash = faTrash
 
-  @Output() sendValue: EventEmitter<string> = new EventEmitter()
+  @Output() sendValue: EventEmitter<string> = new EventEmitter();
   searchValue: string = ''
   
   get search() { return this.gifs.search }
@@ -36,7 +36,7 @@ export class SearchHistoryComponent {
 
     if (index > -1) { 
       this.gifs._search.splice(index, 1); 
-      localStorage.setItem('Search history', JSON.stringify(this.gifs._search))
+      localStorage.setItem('Search history', JSON.stringify(this.gifs._search));
     }
     
     return this.gifs._search
@@ -45,7 +45,7 @@ export class SearchHistoryComponent {
   // Clears all search hitory
   clearSearch(): void {
     this.gifs._search.length = 0;
-    localStorage.clear()
+    localStorage.clear();
   }
 
 }

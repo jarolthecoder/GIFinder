@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { NgxLoadingModule } from 'ngx-loading'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { ResultsComponent } from './components/results/results.component';

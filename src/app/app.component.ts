@@ -8,7 +8,7 @@ import { SharedService } from './shared/services/shared.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'gifs-app';
+  title = 'GIFinder';
   searchValue:string = '';
 
   constructor(public shared: SharedService) {}
