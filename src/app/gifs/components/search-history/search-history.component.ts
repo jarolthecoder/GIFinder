@@ -31,7 +31,7 @@ export class SearchHistoryComponent {
   }
 
   // Removes single search item
-  removeItem(name: string): string[] {;
+  removeItem(name: string): string[] {
     const index = this.gifs._search.indexOf(name);
 
     if (index > -1) { 
