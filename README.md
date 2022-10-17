@@ -1,8 +1,8 @@
 # GIFinder App
 
-<p>Gif finder project built with Angular and using <a href="https://giphy.com/" target="_blank">GIPHY</a>'s API</p>
+<p>GIFinder is a project built with Angular. It connects to <a href="https://giphy.com/">GIPHY</a>'s API and allows to find and share your favourite gifs.</p>
 <p>Live web application link: <a href="https://glistening-kataifi-d84de8.netlify.app/" target="_blank">Click Here</a></p>
-<p>Functionalities of this project:</p>
+<p><strong>Functionalities of this project:</strong></p>
 <ul>
     <li>Input validation check if input is empty</li>
     <li>Displays trending hashtags and gifs in real time</li>
