@@ -23,6 +23,6 @@ export class ResultsComponent {
   constructor(public gifs: GifService, public shared: SharedService) {}
 
   copyLink( link: string ) {
-      this.shared.copyLink(link)
+      this.shared.copyLink(link);
   }
 }
